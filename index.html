@@ -167,13 +167,11 @@ tr:last-child td{border-bottom:none}
   .metrics-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-.demo-disclaimer{position:relative;z-index:5;padding:8px 14px;background:#111827;border-bottom:1px solid rgba(148,163,184,.18);color:#94a3b8;text-align:center;font:500 11px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+.demo-disclaimer{display:block;max-width:min(720px,calc(100% - 32px));margin:14px auto 0;padding:10px 14px;background:rgba(15,23,42,.88);border:1px solid rgba(148,163,184,.22);border-radius:12px;color:#cbd5e1;text-align:center;font:500 11px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
 
 </style>
 </head>
 <body>
-<div class="demo-disclaimer" role="note">Disclaimer: All displayed data, names, messages, and metrics are fictional and shown for visual demonstration purposes only.</div>
-
 
 <div class="app">
   <!-- ── Topbar ────────────────────────────────────────────── -->
@@ -184,6 +182,8 @@ tr:last-child td{border-bottom:none}
       <span style="color:var(--dim);font-size:.82rem">Admin Panel</span>
     </div>
   </header>
+<div class="demo-disclaimer" role="note">Disclaimer: All displayed data, names, messages, and metrics are fictional and shown for visual demonstration purposes only.</div>
+
 
   <!-- ── Sidebar ───────────────────────────────────────────── -->
   <nav class="sidebar">
